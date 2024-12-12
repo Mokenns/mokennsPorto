@@ -598,12 +598,12 @@ html {
 					}
 					.skills__card-container {
 						color: var(--bg-color-section2);
-						height: 300px;
+						height: 200px;
 						overflow: hidden;
 					}
 
 					&[open] {
-						height: 400px;
+						height: 250px;
 						.skills__cards-title {
 							height: auto;
 						}
@@ -880,10 +880,10 @@ html {
 				.skills__cards {
 					flex-direction: row;
 					.skills__cards-container {
-						height: 500px;
+						height: 300px;
 						width: 130px;
 						&[open] {
-							height: 500px;
+							height: 300px;
 							width: inherit;
 						}
 					}
