@@ -1,58 +1,27 @@
-/*
-Metodología BEM: https://en.bem.info/methodology/quick-start/
-Generador de animaciones: https://animista.net/
-Efectos de hover para botones y enlaces: https://ianlunn.github.io/Hover/
-Loaders con CSS: https://css-loaders.com/
-Sombras con CSS: https://getcssscan.com/css-box-shadow-examples
-Frontend Code con ideas geniales: https://codepen.io/
-==============================
-  * CSS TABLE CONTENT *  
-==============================
-1. GOOGLE FONT
-2. VARIABLES CSS
-3. BASE
-4. REUSABLE CSS CLASSES
-5. HEADER & NAV
-6. BREAKPOINTS
-==============================
-  * END TABLE CONTENT *  
-==============================
-*/
-
-/* ============= VARIABLES CSS ============= */
-
 :root {
 	color-scheme: light dark;
-	/* height */
 	--header-height: 60px;
 
-	/* Colores */
 	--primary-color: light-dark(#111, #ffffffcc);
 	--bg-color-section1: light-dark(#d383f8, #111);
 	--bg-color-section2: light-dark(#ff7bf4, #413e41);
 	--bg-color-buttons: light-dark(#a070fa, #390044);
 
-	/* Typografia */
 	--normal-font-size: 16px;
 	--small-font-size: 12px;
 
-	/* Grosores */
 	--font-semi-bold: 600;
 
-	/* Margenes */
 	--mr-2: 16px;
 	--mr-3: 20px;
 	--mr-4: 26px;
 
-	/* z index */
 	--z-fixed: 1;
 	--z-modal: 2;
 
-	/* Sombras */
 	--box-shadow: 0px 10px 100px #0000001a;
 }
 
-/* ============= BASE ============= */
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -82,14 +51,12 @@ html {
 		height: auto;
 		display: block;
 	}
-	/* darkmode  */
 	&:has([name='color-scheme']:checked) {
 		color-scheme: dark;
 	}
 	&:has([name='color-scheme']) {
 		color-scheme: light;
 	}
-	/* scroll  */
 	&::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -104,7 +71,6 @@ html {
 	}
 }
 
-/* ============= REUSABLE CLASSES ============= */
 .section {
 	padding: 4rem 0;
 	.section__title {
@@ -183,8 +149,6 @@ html {
 	}
 }
 
-/* ============= Header & NavBar ============= */
-
 .header {
 	position: fixed;
 	top: 0;
@@ -260,11 +224,9 @@ html {
 			}
 		}
 
-		/* toggles  */
 		.navbar__toggles {
 			gap: 1rem;
 
-			/* darkmode toggle */
 			.navbar__toggle--darkmode {
 				.navbar__toggle--darkmode-label {
 					width: 42px;
@@ -337,7 +299,6 @@ html {
 				}
 			}
 
-			/* language toggle */
 			.navbar__toggle--language {
 				.navbar__toggle--language-label {
 					width: 42px;
@@ -402,7 +363,6 @@ html {
 	}
 }
 
-/* ============= Home ============= */
 .home {
 	background-color: var(--bg-color-section1);
 	position: relative;
@@ -529,7 +489,6 @@ html {
 	}
 }
 
-/* ============= About ============= */
 .about {
 	background-color: var(--bg-color-section2);
 	overflow: hidden;
@@ -556,14 +515,12 @@ html {
 	}
 }
 
-/* ============= skills ============= */
 .skills {
 	background-color: var(--bg-color-section1);
 	.skills__container {
 		.skills__description {
 			text-align: center;
 		}
-		/* SLIDER  */
 		.skills__wrapper {
 			.skills__cards {
 				display: flex;
@@ -631,7 +588,6 @@ html {
 	}
 }
 
-/* ============= Projects ============= */
 .projects {
 	background-color: var(--bg-color-section2);
 	.projects__container {
@@ -681,7 +637,6 @@ html {
 	}
 }
 
-/* ============= Contact ============= */
 .contact {
 	background-color: var(--bg-color-section1);
 	.contact__container {
@@ -736,7 +691,6 @@ html {
 	}
 }
 
-/* ============= Footer ============= */
 .footer {
 	background-color: #111;
 	color: #efefef;
@@ -777,8 +731,6 @@ html {
 		padding-top: 2rem;
 	}
 }
-
-/* ============= Media Queries ============= */
 
 @media (width >= 768px) {
 	:root {
@@ -875,7 +827,6 @@ html {
 
 	.skills {
 		.skills__container {
-			/* SLIDER  */
 			.skills__wrapper {
 				.skills__cards {
 					flex-direction: row;
